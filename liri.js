@@ -13,7 +13,7 @@ var spotify = new Spotify(keys.spotify);
 var userOption = process.argv[2];
 var inputParam = process.argv[3];
 
-//Execute function
+// Execute function
 UserInputs(userOption, inputParam);
 
 
@@ -36,7 +36,7 @@ function UserInputs(userOption, inputParam) {
     }
 }
 
-//Funtion for Concert Info: Bands in Town
+// Function for Concert Info: Bands in Town
 function showConcertInfo(inputParam) {
     var queryUrl = "https://rest.bandsintown.com/artists/" + inputParam + "/events?app_id=codingbootcamp";
     request(queryUrl, function (error, response, body) {
@@ -63,7 +63,7 @@ function showConcertInfo(inputParam) {
     });
 }
 
-//Funtion for Music Info: Spotify
+// Function for Music Info: Spotify
 function showSongInfo(inputParam) {
     if (inputParam === undefined) {
         inputParam = "The Sign"; //default Song
@@ -99,7 +99,7 @@ function showSongInfo(inputParam) {
     );
 };
 
-//Funtion for Movie Info: OMDB
+// Function for Movie Info: OMDB
 function showMovieInfo(inputParam) {
     if (inputParam === undefined) {
         inputParam = "Mr. Nobody"
@@ -142,7 +142,7 @@ function showMovieInfo(inputParam) {
     });
 }
 
-//function to get proper Rotten Tomatoes Rating
+// Function to get proper Rotten Tomatoes Rating
 function getRottenTomatoesRatingObject(data) {
     return data.Ratings.find(function (item) {
         return item.Source === "Rotten Tomatoes";
@@ -153,7 +153,7 @@ function getRottenTomatoesRatingValue(data) {
     return getRottenTomatoesRatingObject(data).Value;
 }
 
-//function for reading out of random.txt file  
+// Function for reading out of random.txt file  
 function showSomeInfo() {
     fs.readFile('random.txt', 'utf8', function (err, data) {
         if (err) {
