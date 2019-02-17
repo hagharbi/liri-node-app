@@ -26,21 +26,21 @@ Output: The system will display a list of all events and locations where the art
 
 Results
 
-### Example 2: `<addr>`Run the spotify-this-song command
+#### Example 2: `Run the spotify-this-song command`
 
  ```node liri.js spotify-this-song <name of song>```
 Output: The system will display a list of information associated with the song. It can result in multiple records. The system will also log all the results in the log.txt file. See screen-shot below:
 
 Results
 
-### Example 3: `<addr>`Run the movie-this command
+#### Example 3: `Run the movie-this command`
 
 ``` node liri.js movie-this <name of movie>```
 Output: The system will display information associated with the movie. The system will also log all the results in the log.txt file. See screen-shot below:
 
 Results
 
-### Example 4: `<addr>`Run the do-what-it-says command
+#### Example 4: `Run the do-what-it-says command`
 
  ``` node liri.js do-what-it-says```
 Output: The system will read the text in the random.txt file, and perform the comman listed in the random.txt file.
@@ -53,12 +53,12 @@ Results
 * Javascript
 * Nodejs
 * Node packages:
-  *Node-Spotify-API
-  *Request
-  *Moment
-  *DotEnv
+  * Node-Spotify-API
+  * Request
+  * Moment
+  * DotEnv
 * APIs used:
-  *Bands in Town
-  *OMDB
-*Git
-*GitHub
+  * Bands in Town
+  * OMDB
+* Git
+* GitHub
