@@ -24,7 +24,7 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI is a command l
  ```node liri.js concert-this <name of artist or band>```
 Output: The system will display a list of all events and locations where the artist or band will perform. It can result in multiple records. The system will also log all the results in the log.txt file. See screen-shot below:
 
-![Image of concert-this](https://github.com/hagharbi/liri-node-app/Screenshots/concert-this.gif)
+![Image of concert-this](https://github.com/hagharbi/liri-node-app/blob/master/Screenshots/concert-this%20.gif)
 
 #### Example 2: Run `the spotify-this-song` command
 
